@@ -1,4 +1,4 @@
-package dto;
+package br.senac.df.dto;
 
 public class DeptEmpDto {
 	

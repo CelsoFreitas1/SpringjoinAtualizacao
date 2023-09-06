@@ -1,4 +1,4 @@
-package entidade;
+package br.senac.df.entidade;
 
 import java.io.Serializable;
 import java.util.Set;
@@ -22,6 +22,14 @@ public class Departamento  implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
+	public Set<Empregado> getEmpregado() {
+		return empregado;
+	}
+
+	public void setEmpregado(Set<Empregado> empregado) {
+		this.empregado = empregado;
+	}
+
 	@Column(name="nome")
 	private String nome;
 	

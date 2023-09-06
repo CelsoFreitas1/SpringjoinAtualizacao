@@ -1,4 +1,4 @@
-package entidade;
+package br.senac.df.entidade;
 
 
 import java.io.Serializable;
@@ -67,6 +67,14 @@ public class Empregado implements Serializable {
 
 	public String getEndereco() {
 		return endereco;
+	}
+
+	public Departamento getDepartamento() {
+		return departamento;
+	}
+
+	public void setDepartamento(Departamento departamento) {
+		this.departamento = departamento;
 	}
 
 	public void setEndereco(String endereco) {
